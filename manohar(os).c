@@ -13,9 +13,9 @@ void sorting()
 {
 struct g temp;
 int i,j;
-for(i=0;i<n;i++)
+for(i=0;i<n;i++)//time complexity= O(n)
     {
-        for(j=i+1;j<n;j++)
+        for(j=i+1;j<n;j++)//time complexity= O(n^2)
             {
                 if(a[i].AT>a[j].AT)//swapping
                     {
