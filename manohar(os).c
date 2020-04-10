@@ -36,7 +36,7 @@ int main()
      printf("Enter no of processes:");
      scanf("%d",&n);//input for number of variables
      
-     for(i=0,c='A';i<n;i++,c++)//for multiple inputs
+     for(i=0,c='A';i<n;i++,c++)//for multiple inputs  time complexity= O(n)
      {
          a[i].name=c;
          printf("\nEnter the arrival time and burst time of process %c: ",a[i].name);
@@ -51,7 +51,7 @@ printf("first queue with RR with qt=5");//1st queue with quantum time 5 with rou
 
 
 printf("\nProcess\t\tRT\t\tWT\t\tTAT\t\t");
-for(i=0;i<n;i++)
+for(i=0;i<n;i++)//time complexity= O(n)
 {
 
   if(a[i].RT<=t1)
@@ -84,7 +84,7 @@ if(flag==1)//if condition is true in previous else it enters the second queue wh
  printf("\nProcess\t\tRT\t\tWT\t\tTAT\t\t");
 }
 
-for(i=0;i<k;i++)
+for(i=0;i<k;i++)//time complexity=O(n)
    {
     if(b[i].RT<=t2)
      {
@@ -113,7 +113,7 @@ if(flag==2)
 {
 printf("\nProcess in third queue(FCFS)");
 }
-for(i=0;i<r;i++)//appplying first come first serve
+for(i=0;i<r;i++)//appplying first come first serve   and time complexity=O(n)
 {
     if(i==0)
             d[i].CT=d[i].BT+time-t1-t2;
@@ -122,7 +122,7 @@ for(i=0;i<r;i++)//appplying first come first serve
 
 }
 
-for(i=0;i<r;i++)
+for(i=0;i<r;i++)//time complexity=O(n)
     {
         d[i].TAT=d[i].CT;//turaround time
         d[i].WT=d[i].TAT-d[i].BT;//waiting time formula
